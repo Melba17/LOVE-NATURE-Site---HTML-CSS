@@ -1,0 +1,54 @@
+/* cta - Page Accueil*/
+.cta {
+  display: flex;
+  width: 150px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--body-font);
+  font-size: var(--cta-font-size);
+  font-style: normal;
+  font-weight: var(--cta-font-weight);
+  text-decoration: none;
+}
+.cta:hover,
+.cta.active {
+  background: linear-gradient(#006310, #4f7a56);
+}
+
+/* cta - Page À Propos*/
+.cta__bis {
+  display: flex;
+  width: 239px;
+  padding: 15px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--body-font);
+  font-size: var(--cta-font-size);
+  font-style: normal;
+  font-weight: var(--cta-font-weight);
+  text-decoration: none;
+}
+.cta__bis:hover,
+.cta__bis.active {
+  background: linear-gradient(#006310, #4f7a56);
+  color: var(--white);
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 996px) {
+  .cta {
+    width: 90px;
+  }
+  .cta__bis {
+    width: 150px;
+  }
+}

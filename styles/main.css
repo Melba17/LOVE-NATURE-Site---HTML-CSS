@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Bebas+Neue&display=swap");
+
+/* Pages */
+@import "accueil.css";
+@import "à propos.css";
+@import "galeries.css";
+/* Modules */
+@import "modules/navbar.css";
+@import "modules/cta.css";
+@import "modules/footer.css";
+@import "modules/formulaire.css";
+
+* {
+  margin: 0;
+}
+
+/* Design System */
+:root {
+  /* Colors */
+  --appBar-highlight: #006310;
+  --background-color: #4f7a56;
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Text configuration */
+  --body-font: "Barlow";
+  --body-highlight-font: "Barlow";
+  --header-font: "Bebas Neue";
+  --h1: "Bebas Neue";
+  --h2: "Bebas Neue";
+
+  --body-font-weight: 400;
+  --footer-font-weight: 400;
+  --body-highlight-font-weight: 600;
+  --cta-font-weight: 700;
+  --header-font-weight: 400;
+  --title-font-weight: 400;
+
+  --body-font-size: 1.5rem;
+  --cta-font-size: 1.5rem;
+  --footer-font-size: 1.25rem;
+  --body-highlight-font-size: 1.5rem;
+  --header-font-size: 3rem;
+  --h1-font-size: 4.5rem;
+  --h2-font-size: 3.5rem;
+}
+
+body {
+  background-color: var(--background-color);
+  max-width: 1440px;
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: var(--body-font-weight);
+  font-size: var(--body-font-size);
+  line-height: normal;
+  color: var(--white);
+}
+
+h1 {
+  font-family: var(--h1);
+  font-style: normal;
+  font-weight: var(--title-font-weight);
+  font-size: var(--h1-font-size);
+  line-height: normal;
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--h2);
+  font-style: normal;
+  font-weight: var(--title-font-weight);
+  font-size: var(--h2-font-size);
+  line-height: normal;
+  color: var(--white);
+}
+
+h3 {
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: var(--body-highlight-font-weight);
+  font-size: var(--body-font-size);
+  line-height: normal;
+  color: var(--white);
+}
+
+/* Media Queries*/
+
+@media screen and (max-width: 996px) {
+  /* Mobile Variables */
+  /* Text configuration */
+  :root {
+    --body-font-size: 1rem;
+    --cta-font-size: 1.25rem;
+    --footer-font-size: 1rem;
+    --body-highlight-font-size: 1.25rem;
+    --header-font-size: 2rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+  }
+}
